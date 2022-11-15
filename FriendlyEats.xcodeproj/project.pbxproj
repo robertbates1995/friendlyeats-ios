@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A51EE48291F28830004B16A /* FirebaseAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7A51EE47291F28830004B16A /* FirebaseAuthUI */; };
+		7A51EE4A291F28830004B16A /* FirebaseEmailAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7A51EE49291F28830004B16A /* FirebaseEmailAuthUI */; };
+		7A51EE4C291F28830004B16A /* FirebaseFirestoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7A51EE4B291F28830004B16A /* FirebaseFirestoreUI */; };
+		7A51EE4F291F29530004B16A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7A51EE4E291F29530004B16A /* SDWebImageSwiftUI */; };
+		7A51EE532923152B0004B16A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A51EE522923152B0004B16A /* GoogleService-Info.plist */; };
 		8D004D2D1EE879B5004DEF35 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D004D2C1EE879B5004DEF35 /* FiltersViewController.swift */; };
 		8D5DF7021F7EF3BA00B0D24F /* NewReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5DF7011F7EF3BA00B0D24F /* NewReviewViewController.swift */; };
 		8D9BBC311EE2200900194E9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BBC301EE2200900194E9A /* AppDelegate.swift */; };
@@ -33,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A51EE522923152B0004B16A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D004D2C1EE879B5004DEF35 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		8D5DF7011F7EF3BA00B0D24F /* NewReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReviewViewController.swift; sourceTree = "<group>"; };
 		8D9BBC2D1EE2200900194E9A /* FriendlyEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendlyEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A51EE4F291F29530004B16A /* SDWebImageSwiftUI in Frameworks */,
+				7A51EE4A291F28830004B16A /* FirebaseEmailAuthUI in Frameworks */,
+				7A51EE4C291F28830004B16A /* FirebaseFirestoreUI in Frameworks */,
+				7A51EE48291F28830004B16A /* FirebaseAuthUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +122,7 @@
 				8DD9ACD91F7B166900C2DD24 /* pizza-monster.png */,
 				8D9BBC391EE2200900194E9A /* LaunchScreen.storyboard */,
 				8D9BBC3C1EE2200900194E9A /* Info.plist */,
+				7A51EE522923152B0004B16A /* GoogleService-Info.plist */,
 			);
 			path = FriendlyEats;
 			sourceTree = "<group>";
@@ -141,6 +152,12 @@
 			dependencies = (
 			);
 			name = FriendlyEats;
+			packageProductDependencies = (
+				7A51EE47291F28830004B16A /* FirebaseAuthUI */,
+				7A51EE49291F28830004B16A /* FirebaseEmailAuthUI */,
+				7A51EE4B291F28830004B16A /* FirebaseFirestoreUI */,
+				7A51EE4E291F29530004B16A /* SDWebImageSwiftUI */,
+			);
 			productName = FriendlyEats;
 			productReference = 8D9BBC2D1EE2200900194E9A /* FriendlyEats.app */;
 			productType = "com.apple.product-type.application";
@@ -175,7 +192,6 @@
 				TargetAttributes = {
 					8D9BBC2C1EE2200900194E9A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 2DDP9BK6TP;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -196,6 +212,10 @@
 				Base,
 			);
 			mainGroup = 8D9BBC241EE2200800194E9A;
+			packageReferences = (
+				7A51EE46291F28830004B16A /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */,
+				7A51EE4D291F29530004B16A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 8D9BBC2E1EE2200900194E9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -215,6 +235,7 @@
 				8D9BBC381EE2200900194E9A /* Assets.xcassets in Resources */,
 				8D9BBC361EE2200900194E9A /* Main.storyboard in Resources */,
 				8DD9ACDA1F7B166900C2DD24 /* pizza-monster.png in Resources */,
+				7A51EE532923152B0004B16A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +412,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -404,7 +426,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2DDP9BK6TP;
 				INFOPLIST_FILE = FriendlyEats/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.firebase.FriendlyEats47;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -417,7 +442,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2DDP9BK6TP;
 				INFOPLIST_FILE = FriendlyEats/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.firebase.FriendlyEats47;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -430,7 +458,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FriendlyEatsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.firebase.FriendlyEatsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -444,7 +476,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FriendlyEatsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.firebase.FriendlyEatsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -483,6 +519,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A51EE46291F28830004B16A /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/FirebaseUI-iOS";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7A51EE4D291F29530004B16A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A51EE47291F28830004B16A /* FirebaseAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A51EE46291F28830004B16A /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			productName = FirebaseAuthUI;
+		};
+		7A51EE49291F28830004B16A /* FirebaseEmailAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A51EE46291F28830004B16A /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			productName = FirebaseEmailAuthUI;
+		};
+		7A51EE4B291F28830004B16A /* FirebaseFirestoreUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A51EE46291F28830004B16A /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			productName = FirebaseFirestoreUI;
+		};
+		7A51EE4E291F29530004B16A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A51EE4D291F29530004B16A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D9BBC251EE2200800194E9A /* Project object */;
 }
